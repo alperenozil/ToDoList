@@ -9,7 +9,7 @@
     tools:context=".fragments.add.addFragment">
 
     <EditText
-        android:id="@+id/editTextTitle"
+        android:id="@+id/editTextCurrentTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -24,17 +24,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/prioritiesSpinner"
+        android:id="@+id/prioritiesSpinnerCurrent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:entries="@array/priorities"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTitle"
-        app:layout_constraintStart_toStartOf="@+id/editTextTitle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTitle" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextCurrentTitle"
+        app:layout_constraintStart_toStartOf="@+id/editTextCurrentTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCurrentTitle" />
 
     <EditText
-        android:id="@+id/editTextDescription"
+        android:id="@+id/editTextCurrentDescription"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
@@ -48,5 +48,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prioritiesSpinner" />
+        app:layout_constraintTop_toBottomOf="@+id/prioritiesSpinnerCurrent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
